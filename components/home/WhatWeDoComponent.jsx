@@ -1,5 +1,6 @@
 import React, {FC,ReactElement} from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 
 const WhatWeDoComponent = ({heading,subHeading, items}) => {
@@ -35,6 +36,15 @@ const WhatWeDoComponent = ({heading,subHeading, items}) => {
                             description={item.description}
                             key={item.slug}/>
                     )}
+                </div>
+                <div className={`flex justify-evenly space-x-10 invisible md:visible`}>
+                    <div className={`text-2xl flex p-4 bg-orange-600 rounded-lg text-white items-center cursor-pointer select-none`}>
+                        <p className={`uppercase`}>
+                            <Link href={`/appointment`}>
+                                Book an Appointment
+                            </Link>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

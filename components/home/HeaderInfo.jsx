@@ -7,10 +7,10 @@ const HeaderInfo = ({email, phone}) => {
     }
     return (
         <div className={`flex justify-evenly space-x-10 invisible md:visible`}>
-            <div className={`text-2xl flex p-4 bg-orange-600 rounded-lg text-white items-center cursor-pointer select-none`}>
+            <div className={`text-xl flex p-4 bg-orange-600 rounded-lg text-white items-center cursor-pointer select-none`}>
                 <p className={`uppercase`}>
                 <Link href={`/appointment`}>
-                        Book Online
+                        Book an Appointment
                 </Link>
                 </p>
             </div>

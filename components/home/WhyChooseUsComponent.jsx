@@ -1,4 +1,5 @@
 import React, {FC} from "react";
+import Link from "next/link";
 
 
 const WhyChooseUsComponent =
@@ -10,9 +11,11 @@ const WhyChooseUsComponent =
                         <h2 className={`headerText text-4xl font-playFair`}>{heading}</h2>
                         <p className={`text-slate-500 italic`}>{subHeading}</p>
                     </div>
-                    <div className={`px-40 sm:px-4 md:px-40 lg:px-40 text-justify`}>
+                    <div className={`px-4 sm:px-4 md:px-40 lg:px-40 text-justify`}>
                         <p className={`leading-loose text-center text-2xl font-thin`}>{content}</p>
                     </div>
+
+
 
                 </div>
             </div>

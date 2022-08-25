@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import Image from "next/image";
 import { FaBeer } from 'react-icons/fa';
+import Link from "next/link";
 
 const WorkProcessComponent = ({heading, processes}) => {
 
@@ -31,6 +32,7 @@ const WorkProcessComponent = ({heading, processes}) => {
                     )}
                 </div>
             </div>
+
         </div>
     );
 }
