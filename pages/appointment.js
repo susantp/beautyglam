@@ -8,7 +8,7 @@ import CalendarComponent from "../components/appointment/CalendarComponent";
 
 function Appointment(props) {
     const [formValues, setFormValues] = useState({
-        firstName: 's',
+        firstName: '',
         lastName: '',
         email: '',
         phone: '',
