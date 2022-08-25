@@ -4,17 +4,17 @@ import useContentSchema from "../hooks/useContentSchema";
 import SingleCategory from "../components/appointment/SingleCategory";
 
 function Appointment(props) {
-    const formRef = useRef()
+    const formRef = useRef(null)
     const {categories} = useContentSchema();
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(event)
+        console.log(formRef.current.value)
     }
 
     return (
         <Layout>
             <div className={`container mx-auto sectionDiv`}>
-                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={formRef} onSubmit={handleSubmit}>
 
                     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                         <div className={`mb-6 flex flex-col gap-y-2`}>
