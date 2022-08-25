@@ -1,18 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 
-function CalendarComponent(props) {
-    const [value, setValue] = useState(new Date());
-
-    const onChange = (nextValue) => {
-        console.log(nextValue)
-        return setValue(nextValue)
-    }
+function CalendarComponent({handleCalenderOnChange, calendarValue}) {
 
     return (
         <div className={``}>
-            <Calendar className={`react-calendar__tile react-calendar__tile--hover`} onChange={onChange} value={value}/>
+            <Calendar className={`react-calendar__tile react-calendar__tile--hover`} onChange={handleCalenderOnChange} value={calendarValue}/>
         </div>
     );
 }
