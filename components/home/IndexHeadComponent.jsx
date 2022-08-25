@@ -1,10 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
-const IndexHeadComponent = () => {
+const IndexHeadComponent = ({page}) => {
+    const title = `Beauty Glam by Sushi - ${page.toUpperCase()}`
     return (
         <Head>
-            <title>Beauty Glam by Sushi</title>
+            <title>{title}</title>
             <meta
                 content="IE=edge"
                 httpEquiv="X-UA-Compatible"

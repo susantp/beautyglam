@@ -2,6 +2,8 @@ import React, {useRef} from 'react';
 import Layout from "../layout/Layout";
 import useContentSchema from "../hooks/useContentSchema";
 import SingleCategory from "../components/appointment/SingleCategory";
+import Head from "next/head";
+import IndexHeadComponent from "../components/home/IndexHeadComponent";
 
 function Appointment(props) {
     const formRef = useRef(null)
@@ -13,6 +15,7 @@ function Appointment(props) {
 
     return (
         <Layout>
+            <IndexHeadComponent page={`appointment`}/>
             <div className={`container mx-auto sectionDiv`}>
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={formRef} onSubmit={handleSubmit}>
 
