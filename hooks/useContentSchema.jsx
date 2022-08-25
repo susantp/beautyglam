@@ -69,8 +69,7 @@ export default function UseContentSchema() {
     const [whyChooseUs, setWhyChooseUs] = useState({
         heading: 'Beauty Glam by Sushi',
         subHeading: 'your one-time beauty stop',
-        content: 'Whether you want to spruce up your nails with an OPI manicure, take care of your skin with a Clarena facial or get rid of hair with waxing or the more permanent IPL, you can do it here. The treatment room can be found downstairs in the salon, a 10-minute walk from both Cricklewood and Kilburn stations.\n' +
-            'There is also paid parking nearby.'
+        content: 'Whether you want to spruce up your nails with an OPI manicure, take care of your skin with a Clarena facial or get rid of hair with waxing or the more permanent IPL, you can do it here. '
     });
     const [whatWeDo, setWhatWeDo] = useState({
         heading: "where our values matter",
