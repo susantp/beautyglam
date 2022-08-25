@@ -120,9 +120,7 @@ function Appointment(props) {
                     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                         <div>
                             <div className={`mb-6 flex flex-col gap-y-2`}>
-                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                                    Appointment&rsquo;s Time
-                                </label>
+                          
                                 <CalendarComponent calendarValue={formValues.date}
                                                    handleCalenderOnChange={handleCalenderOnChange}/>
 
