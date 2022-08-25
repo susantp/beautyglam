@@ -4,6 +4,7 @@ import useContentSchema from "../hooks/useContentSchema";
 import SingleCategory from "../components/appointment/SingleCategory";
 import Head from "next/head";
 import IndexHeadComponent from "../components/home/IndexHeadComponent";
+import CalendarComponent from "../components/appointment/CalendarComponent";
 
 function Appointment(props) {
     const formRef = useRef(null)
@@ -16,6 +17,7 @@ function Appointment(props) {
     return (
         <Layout>
             <IndexHeadComponent page={`appointment`}/>
+
             <div className={`container mx-auto sectionDiv`}>
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={formRef} onSubmit={handleSubmit}>
 
@@ -62,27 +64,22 @@ function Appointment(props) {
                     </div>
 
                     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                        <div className={`mb-6 flex flex-col gap-y-2`}>
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                                Appointment Date
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="appointment-date" type="date" placeholder="Email"
-                            />
-                        </div>
-                        <div className={`mb-6 flex flex-col gap-y-2`}>
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                                Appointment&rsquo;s Time
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="appointment-time" type="time"
-                            />
-                        </div>
-                    </div>
 
-                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
+                        <div>
+                            <div className={`mb-6 flex flex-col gap-y-2`}>
+                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+                                    Appointment&rsquo;s Time
+                                </label>
+                                <CalendarComponent />
+
+                                <input
+                                    className="shadow appearance-none border rounded w-[22rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="appointment-time" type="time"
+                                />
+                            </div>
+                        </div>
+
                         <div className={`mb-6 flex flex-col gap-y-2`}>
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="category">
                                 Choose Category
