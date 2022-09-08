@@ -69,7 +69,7 @@ export default function UseContentSchema() {
     const [whyChooseUs, setWhyChooseUs] = useState({
         heading: 'Beauty Glam by Sushi',
         subHeading: 'your one-time beauty stop',
-        content: 'Whether you want to spruce up your nails with an OPI manicure, take care of your skin with a Clarena facial or get rid of hair with waxing or the more permanent IPL, you can do it here. '
+        content: 'Whether you would like to spruce up your nails with an OPI nail trim, pay consideration of your skin with a Clarena facial or get liberated of hair with waxing or the more enduring IPL, you will be able do it here.'
     });
     const [whatWeDo, setWhatWeDo] = useState({
         heading: "where our values matter",
